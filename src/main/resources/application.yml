@@ -1,0 +1,25 @@
+micronaut:
+  application:
+    name: transactionsDebug
+r2dbc:
+  datasources:
+    default:
+      url: r2dbc:postgresql://localhost:5432/postgres
+      username: postgres
+      password: postgres
+
+flyway:
+  datasources:
+    default:
+      enabled: true
+datasources:
+  default:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+    schema-generate: NONE
+
+logger:
+  levels:
+    io.micronaut.data: DEBUG
