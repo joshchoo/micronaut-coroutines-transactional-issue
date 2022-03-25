@@ -28,7 +28,3 @@ plication/json"
 **Expected:** Duplicate key value exception occurs, and no rows should be created in the database.
 
 **Actual:** One row is still created in the database.
-
-# Project Reactor
-
-For comparison, @Transactional works fine when using the Reactive Streams approach (see `/reactor` endpoint). 
