@@ -18,6 +18,13 @@ $ ./gradlew run
 
 # Steps to reproduce
 
+Run the failing test:
+```bash
+./gradlew test -i
+```
+
+## Alternatively, reproduce the error manually with the following steps
+
 Send a post request to `/suspend`:
 
 ```bash
